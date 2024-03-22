@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone paper scissor</title>
+    <link rel="stylesheet" href="gm.css">
+</head>
+<body>
+
+    <div class = 'maindiv'>
+        <div class = 'Header'>
+            <div class = "sectionfrst">
+                <div>ROCK</div>
+                <div>PAPER</div>
+                <div>SCISSOR</div>
+            </div>
+
+            <div class = "sectionscnd">
+                <div class = " scr uscr">
+                    <div>YOUR </div>
+                    <div>SCORE</div>
+                    <div class ="shows uscore">0</div>
+                </div>
+
+                <div class = "scr csr">
+                    <div>COMPUTER</div>
+                    <div>SCORE</div>
+                    <div class = " shows cscore">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- user options picking -->
+
+    <div class = "originalchoice">
+        <div class="frstdiv">
+            <div class = "choice stone">
+                <img src ="assets\hand.png" onclick="uchoose('stone')">
+            </div>
+            <div class="hrzntl lfrst"></div>
+            <div class = "choice scissor">
+                <img src ="assets/scissor.png" onclick="uchoose('scissor')">
+            </div>
+        </div>
+
+        <div class = "scnddiv">
+            <div class="hrzntl lscnd"></div>
+            <div class="hrzntl lthrd"></div>
+        </div>
+
+        <div class = "thirddiv">
+            <div class = "choice paper">
+                <img src="assets/paper.png" onclick="uchoose('paper')">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Rules -->
+
+ <div class = "rulediv">
+    <h2 class = "ruletitle"> Game Rules</h2>
+    <ul style="list-style-type:square;">
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+        <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+        <li>If both players lay down the same hand, each player lays down another hand</li>
+    </ul>
+</div>
+<div class="crossbttn">
+    <img src = "assets/X.png" onclick="closee()">
+</div>
+
+<div class="rulebttn">
+    <div onclick="rulesdsp()">RULES</div>
+</div>
+
+<div class = "nxtbttn">
+    <div onclick="location.href = 'hrry.html';">NEXT</div>
+</div>
+
+
+<!-- Game Begins -->
+
+
+<div class = "selectrs">
+
+    <!-- Userchoice-->
+    <div class = "userpick">
+        <div>YOU PICKED</div>
+        <div class = "picked part1">
+            <img  src = "assets/hand.png" id = "userpickedimg">
+        </div>
+        
+    </div>
+
+
+
+    <div class = "reslt">
+        <div class = "titlefrst" > YOU WIN </div>
+        <div class = "titlescnd" > AGAINST PC </div>
+        <div class = "rply" onclick="restart()"> PLAY AGAIN </div>
+    </div>
+
+
+    <!-- Computerchoice -->
+
+    <div class = "comppick">
+        <div>PC PICKED</div>
+        <div class = " picked part2">
+            <img src = "assets\paper.png" id = "comppickedimg">
+        </div>
+    </div>
+</div>
+
+    
+
+</div>
+
+
+<script src = "gm.js"></script>
+</body>
+</html>
+
+
+
+
+
+
