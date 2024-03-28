@@ -158,7 +158,7 @@ div .originalchoice{
 }
 
 .rulediv{
-    display: flex;
+    display:flex;
     flex-direction: column;    
 
     width: 278px;

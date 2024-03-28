@@ -62,16 +62,16 @@ const uchoose = (choice) => {
 
     let choosed = document.querySelector(".picked");
     if(choice == "paper"){
-        document.getElementById("userpickedimg").src ="paper.png"
+        document.getElementById("userpickedimg").src ="assets/paper.png"
         choosed.style.borderColor = "#FFA943";
     }
     else if (choice == "stone") {
-        document.getElementById("userpickedimg").src ="hand.png"
+        document.getElementById("userpickedimg").src ="assets/hand.png"
         choosed.style.borderColor = "#0074B6";
     }
     
     else{
-        document.getElementById("userpickedimg").src ="scissor.png"
+        document.getElementById("userpickedimg").src ="assets/scissor.png"
         choosed.style.borderColor = "#BD00FF";
     }
 
